@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "T1",
+      "setup": "",
+      "run": "python main.py",
+      "input": "10 20 25 30 40\r\n35",
+      "output": "[\\w,\\W]*10[\\w,\\W]*20[\\w,\\W]*25[\\w,\\W]*30[\\w,\\W]*35[\\w,\\W]*40[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T2",
+      "setup": "",
+      "run": "python main.py",
+      "input": "10 15 30 35 45\r\n55\r\n",
+      "output": "[\\w,\\W]*10[\\w,\\W]*15[\\w,\\W]*30[\\w,\\W]*35[\\w,\\W]*45[\\w,\\W]*55[\\w,\\W]*",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "T3",
+      "setup": "",
+      "run": "python testsort.py",
+      "input": "",
+      "output": "True",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
